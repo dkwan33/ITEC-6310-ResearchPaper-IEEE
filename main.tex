@@ -17,6 +17,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
+\usepackage{textgreek}
 
 % The following packages can be found on http:\\www.ctan.org
 %\usepackage{graphics} % for pdf, bitmapped graphics files
@@ -27,7 +28,7 @@
 %\usepackage{amssymb}  % assumes amsmath package installed
 
 \title{\LARGE \bf
-Preparation of Papers for IEEE Sponsored Conferences \& Symposia*
+Placeholder Title
 }
 
 %\author{ \parbox{3 in}{\centering Huibert Kwakernaak*
@@ -45,19 +46,13 @@ Preparation of Papers for IEEE Sponsored Conferences \& Symposia*
 %         {\tt\small pmisra@cs.wright.edu}}
 %}
 
-\author{Huibert Kwakernaak$^{1}$ and Pradeep Misra$^{2}$% <-this % stops a space
-\thanks{*This work was not supported by any organization}% <-this % stops a space
-\thanks{$^{1}$H. Kwakernaak is with Faculty of Electrical Engineering, Mathematics and Computer Science,
-        University of Twente, 7500 AE Enschede, The Netherlands
-        {\tt\small h.kwakernaak at papercept.net}}%
-\thanks{$^{2}$P. Misra is with the Department of Electrical Engineering, Wright State University,
-        Dayton, OH 45435, USA
-        {\tt\small p.misra at ieee.org}}%
+\author{David Kwan$^{1}$% <-this % stops a space
+\thanks{$^{1}$D. Kwan is a Master's student in the School of Information Technology, Faculty of Liberal Arts \& Professional Studies, York University, 4700 Keele St, Toronto
+        {\tt\small dkwan33@yorku.ca}}%
 }
 
 
 \begin{document}
-
 
 
 \maketitle
@@ -68,125 +63,318 @@ Preparation of Papers for IEEE Sponsored Conferences \& Symposia*
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
 
-This electronic document is a ``live'' template. The various components of your paper [title, text, heads, etc.] are already defined on the style sheet, as illustrated by the portions given in this document.
+PLACEHOLDER Lorem ipsum diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus viverra vitae congue eu consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed
 
 \end{abstract}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{INTRODUCTION}
+\section{Introduction and Literature Review}
 
-This template, modified in MS Word 2003 and saved as ``Word 97-2003 \& 6.0/95 -- RTF'' for the PC, provides authors with most of the formatting specifications needed for preparing electronic versions of their papers. All standard paper components have been specified for three reasons: (1) ease of use when formatting individual papers, (2) automatic compliance to electronic requirements that facilitate the concurrent or later production of electronic products, and (3) conformity of style throughout a conference proceedings. Margins, column widths, line spacing, and type styles are built-in; examples of the type styles are provided throughout this document and are identified in italic type, within parentheses, following the example. Some components, such as multi-leveled equations, graphics, and tables are not prescribed, although the various table text styles are provided. The formatter will need to create these components, incorporating the applicable criteria that follow.
+Password security is an omnipresent consideration in our daily lives. We use passwords to protect our personal data everywhere, be it internet banking, e-commerce, social media, or any one of an uncountable number of websites that utilize personal accounts. 
 
-\section{PROCEDURE FOR PAPER SUBMISSION}
+Firstly, before proceeding we must define what constitutes password security. Password security is not simply password strength, although that is certainly one of the two major aspects of it, security also includes the habits and actions we take that compromise security \cite{Dhamija2000}. Password strength itself is composed of both the length and complexity of the password \cite{Morris1979}. Certainly, longer passwords with a larger pool of possible characters are harder to crack via brute-force. The weaker the password, the easier it is to brute-force. However, for a stronger password, the probability that a brute-force attack will succeed decreases drastically \cite{DellAmico2010}.
 
-\subsection{Selecting a Template (Heading 2)}
+Password strength meters that are present during account creation on many websites, such as Facebook.com or Amazon.com, certainly guide users to choose stronger passwords, but are not necessarily always present \cite{DeCarnavalet2014}. In the absence of an enforced password strength policy, people tend to choose weaker passwords \cite{DellAmico2010}. 
 
-First, confirm that you have the correct template for your paper size. This template has been tailored for output on the US-letter paper size. Please do not use it for A4 paper since the margin requirements for A4 papers may be different from Letter paper size.
+The habits that compromise our password security are re-use and writing-down \cite{Dhamija2000}. Our forgetfulness, or rather the memorability of our passwords, is a major factor that leads to both password re-use and writing them down. Brown et al. in their study on remembrance and memorability found that a majority of respondents re-use their passwords, and in fact, duplicate them identically \cite{Brown2004}. Password managers are software that auto-generate strong passwords and remember them for us. As long as the manager used is secure, then your passwords are fairly secure \cite{Alkadi2016}. Unfortunately they are not that widely used. It is still much more common to custom-create your own password \cite{Alkadi2016}.
 
-\subsection{Maintaining the Integrity of the Specifications}
+Data breaches have been occurring over the last decade with alarming frequency. Some famous ones include dating website Ashley Madison’s breach in 2015, question-and-answer site Quora in 2018, and cryptocurrency wallet Gatehub in 2019. Password re-use, regardless of the website, enables hackers to access accounts on any websites with that shared password. Thomas et al. in 2017 found that 25\% of the passwords from data breaches matched the same user’s google account \cite{Thomas2017}. 
 
-The template is used to format your paper and style the text. All margins, column widths, line spaces, and text fonts are prescribed; please do not alter them. You may note peculiarities. For example, the head margin in this template measures proportionately more than is customary. This measurement and others are deliberate, using specifications that anticipate your paper as one part of the entire proceedings, and not as an independent document. Please do not revise any of the current designations
+The occurrence of a data breach is not only a risk to our personal data, but it in fact lowers our trust in that website, company, or service \cite{Curtis2018}. When there hasn’t been a data breach (yet), however, our trust is closely linked to the perceived level of security of the website. We trust websites that appear more secure \cite{Flavian2006}.
+Thusly, we arrive at the core questions of this paper: Do we use stronger passwords on certain websites related to our perceived level of trust in that website? I postulate that we do to some extent, for the sake of memorability. Do we have habits that weaken or strengthen our password security? Does our password security change based on whether we have had training on the matter? Our education level in general? Our age? 
 
-\section{MATH}
+Although there has been much research done on what is a strong password, behaviors that make for strong password security, and what influences consumer trust; there has been a lack of research that specifically targets the intersection of password strength and trust. Brown et al., in their discussions, suggested that if security needs are minimal then people should choose a common password that is easy to remember, and if security is essential then choose one that is cryptic \cite{Brown2004}. This paper aims to address, to some extent, all of these questions and investigate any possible relationships to stimulate more research and strengthen previous research.
 
-Before you begin to format your paper, first write and save the content as a separate text file. Keep your text and graphic files separate until after the text has been formatted and styled. Do not use hard tabs, and limit use of hard returns to only one return at the end of a paragraph. Do not add any kind of pagination anywhere in the paper. Do not number text heads-the template will do that for you.
+\section{Hypotheses}
 
-Finally, complete content and organizational editing before formatting. Please take note of the following items when proofreading spelling and grammar:
-
-\subsection{Abbreviations and Acronyms} Define abbreviations and acronyms the first time they are used in the text, even after they have been defined in the abstract. Abbreviations such as IEEE, SI, MKS, CGS, sc, dc, and rms do not have to be defined. Do not use abbreviations in the title or heads unless they are unavoidable.
-
-\subsection{Units}
+The following are the 9 pairs of null and alternate hypotheses tested. They were created after factor analysis to reduce the number of possible dimensions for statistical analysis. It is important to note here that the term “password strength with a consideration of trust” is a confusing notion. This is unintentional but unavoidable as the original intent of this research was to explicitly test whether trust influences password security practice. We will use descriptive statistics to investigate this relationship, but statistical testing could not be performed due to problems in research design and will be elaborated on in the discussion section.
 
 \begin{itemize}
-
-\item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as ``3.5-inch disk drive''.
-\item Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
-\item Do not mix complete spellings and abbreviations of units: ``Wb/m2'' or ``webers per square meter'', not ``webers/m2''.  Spell out units when they appear in text: ``\ldots a few henries'', not ``\ldots a few H''.
-\item Use a zero before decimal points: ``0.25'', not ``.25''. Use ``cm$^3$'', not ``cc''. (bullet list)
+\item H\textsubscript{1o}: There is no difference in password strength between those who are trained and untrained in password security.
+\item H\textsubscript{1a}: There is a difference in password strength between those who are trained and untrained in password security.
+\item H\textsubscript{2o}: There is no difference in password strength with a consideration for consumer trust between those who are trained and untrained in password security.
+\item H\textsubscript{2a}: There is a difference in password strength with a consideration for consumer trust between those who are trained and untrained in password security.
+\item H\textsubscript{3o}: There is no difference in password security habits between those who are trained and untrained in password security.
+\item H\textsubscript{3a}: There is a difference in password security habits between those who are trained and untrained in password security.
+\item H\textsubscript{4o}: There is no difference in password strength between those who are above or below 44 years of age.
+\item H\textsubscript{4a}: There is a difference in password strength between those who are above or below 44 years of age.
+\item H\textsubscript{5o}: There is no difference in password strength with a consideration for consumer trust between those who are above or below 44 years of age.
+\item H\textsubscript{5a}: There is a difference in password strength with a consideration for consumer trust between those who are above or below 44 years of age.
+\item H\textsubscript{6o}: There is no difference in password security habits between those who are above or below 44 years of age.
+\item H\textsubscript{6a}: There is a difference in password security habits between those who are above or below 44 years of age. 
+\item H\textsubscript{7o}: There is no difference in password strength between those have graduate degrees and those who do not.
+\item H\textsubscript{7a}: There is a difference in password strength between those have graduate degrees and those who do not.
+\item H\textsubscript{8o}: There is no difference in password strength with a consideration for consumer trust between those have graduate degrees and those who do not.
+\item H\textsubscript{8a}: There is a difference in password strength with a consideration for consumer trust between those have graduate degrees and those who do not.
+\item H\textsubscript{9o}: There is no difference in password security habits between those have graduate degrees and those who do not.
+\item H\textsubscript{9a}: There is a difference in password security habits between those have graduate degrees and those who do not.
 
 \end{itemize}
 
 
-\subsection{Equations}
+\section{Research Design}
 
-The equations are an exception to the prescribed specifications of this template. You will need to determine whether or not your equation should be typed using either the Times New Roman or the Symbol font (please no other font). To create multileveled equations, it may be necessary to treat the equation as a graphic and insert it into the text after your paper is styled. Number equations consecutively. Equation numbers, within parentheses, are to position flush right, as in (1), using a right tab stop. To make your equations more compact, you may use the solidus ( / ), the exp function, or appropriate exponents. Italicize Roman symbols for quantities and variables, but not Greek symbols. Use a long dash rather than a hyphen for a minus sign. Punctuate equations with commas or periods when they are part of a sentence, as in
-\begin{equation}
-\alpha + \beta = \chi
-\end{equation}
+\subsection{Sampling and Instrumentation}
 
-Note that the equation is centered using a center tab stop. Be sure that the symbols in your equation have been defined before or immediately following the equation. Use ``(1)'', not ``Eq. (1)'' or ``equation (1)'', except at the beginning of a sentence: ``Equation (1) is\ldots''
+The research method used was a survey questionnaire. Sampling was nonrandom as the sample chosen was a convenience sample with the intent of maximizing the possible sample size. Four groups of participants were surveyed: the first being a class of Information Systems Master’s students at York University (including the professor), the second being a group of young professionals a social gathering, the third being friends and family of the researcher, and the last being employees at a small business in the food industry. In total, 40 participants were surveyed. The participants were not told what exactly the intent of the research was, just that the survey is “about password strength”, although due to the wording of the questions on the survey, I surmise it was not particularly difficult to guess the intent of the survey.
 
-\subsection{Some Common Mistakes}
-\begin{itemize}
+The survey was administered in-person only rather than on-line or hybrid. Participants were verbally asked for consent, in addition to the written consent at the top of the first page of the survey. This in-person survey method minimizes the possibility of participants dropping out in the middle of filling-out the questionnaire, as well as nonresponse issues. During the survey process, it was common for participants to not realize there were 2 pages to the questionnaire. However, since the survey process was done in-person, the researcher was able to remind participants to fill out both pages and, in the end, all 40 questionnaires were filled to completion. This survey method eliminates the possibility of participants submitting more than one questionnaire, as the researcher could personally keep track of who had already been given a questionnaire. An on-line or hybrid survey may have been beneficial to increase sample size, but this will be discussed later in the section on external validity.
 
+The questionnaire consisted of 15 questions (See Appendix A for a blank copy of the questionnaire). 3 of the questions were demographic questions, while the other 12 were criterion questions measured on a 5-point Likert scale. The primary criterion questions regarding password strength are presented first, and the demographic questions were presented last to maximize reader interest and thus lower the possibility of nonresponse. A logical navigational path for the criterion questions was followed. In particular, questions 1 to questions 5 ask the reader to rate the strength of their passwords on various types of websites rather than spreading them around the survey. The order of the questions may have given participants a bit of a clue into what was being studied, and the possible responses that the researcher may have expected. The possible effect of this will be discussed later with regards to internal validity. 
 
-\item The word ``data'' is plural, not singular.
-\item The subscript for the permeability of vacuum ?0, and other common scientific constants, is zero with subscript formatting, not a lowercase letter ``o''.
-\item In American English, commas, semi-/colons, periods, question and exclamation marks are located within quotation marks only when a complete thought or name is cited, such as a title or full quotation. When quotation marks are used, instead of a bold or italic typeface, to highlight a word or phrase, punctuation should appear outside of the quotation marks. A parenthetical phrase or statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.)
-\item A graph within a graph is an ``inset'', not an ``insert''. The word alternatively is preferred to the word ``alternately'' (unless you really mean something that alternates).
-\item Do not use the word ``essentially'' to mean ``approximately'' or ``effectively''.
-\item In your paper title, if the words ``that uses'' can accurately replace the word ``using'', capitalize the ``u''; if not, keep using lower-cased.
-\item Be aware of the different meanings of the homophones ``affect'' and ``effect'', ``complement'' and ``compliment'', ``discreet'' and ``discrete'', ``principal'' and ``principle''.
-\item Do not confuse ``imply'' and ``infer''.
-\item The prefix ``non'' is not a word; it should be joined to the word it modifies, usually without a hyphen.
-\item There is no period after the ``et'' in the Latin abbreviation ``et al.''.
-\item The abbreviation ``i.e.'' means ``that is'', and the abbreviation ``e.g.'' means ``for example''.
+Every question was analyzed for the possibility of being misleading (ie: loaded, leading, or double-barreled). Neutral language was used whenever possible, although, since the questions are scored on Likert scales, there must still be a “direction” for the question that the participant can either agree or disagree with. For example, rather than “My passwords are weak”, or “My passwords are strong”, “I tend to use strong passwords” was chosen to make the question feel as neutral as possible while still maintaining a direction. This does pose an internal validity concern, which will be discussed later.
 
-\end{itemize}
+Furthermore, the questions were designed so they would be applicable to all participants. It was unlikely that participants would want or need to answer “not applicable” to any questions except questions 1 to 5. For questions 1 to 5, participants were instructed to leave the question blank if it did not apply to them. This did not prove to be necessary as there were no questions left unanswered on any of the questionnaires.  
 
+Each survey was manually scored by the researcher and then reviewed a second time to minimize the possibility of manual scoring errors. Methods to improve reliability such as split-half reliability were considered, but ultimately not used due to the potential decrease in an already small sample size.
 
-\section{USING THE TEMPLATE}
+\subsection{A Brief Note on Likert Scales}
 
-Use this sample document as your LaTeX source file to create your document. Save this file as {\bf root.tex}. You have to make sure to use the cls file that came with this distribution. If you use a different style file, you cannot expect to get required margins. Note also that when you are creating your out PDF file, the source file is only part of the equation. \emph{Your \TeX\ $\rightarrow$ PDF filter determines the output file size. Even if you make all the specifications to output a letter file in the source - if you filter is set to produce A4, you will only get A4 output.}
+In this paper all Likert scales used on a scale of “agree” to “disagree” are treated as nominal measurements. It is unfit to place an order on “agreeing” or “disagreeing” to a question, as all opinions are equally valid and are thus inherently unordered. In scientific practice, Likert scales are commonly treated as ordinal scales, and in some cases even interval scales; a common argument in favor of interval, that equidistant steps can be inferred if the scale is symmetric \cite{Norman2010}. The Likert-like scales from “weak” to “strong” used in questions 1 to 5 are treated as ordinal. It is reasonable to consider the scale ordinal since it is a direct rating from weak to strong where strong can be said to be higher than weak.
 
-It is impossible to account for all possible situation, one would encounter using \TeX. If you are using multiple \TeX\ files you must make sure that the ``MAIN`` source file is called root.tex - this is particularly important if your conference is using PaperPlaza's built in \TeX\ to PDF conversion tool.
+\subsection{Variables}
 
-\subsection{Headings, etc}
+The 3 demographic questions on the questionnaire measured three independent variables: the age of the participant, their general level of education, and their specific level of education with regards to password security. The intent of the latter was to gauge whether the participant had been formally taught what makes a strong password. 
 
-Text heads organize the topics on a relational, hierarchical basis. For example, the paper title is the primary text head because all subsequent material relates and elaborates on this one topic. If there are two or more sub-topics, the next level head (uppercase Roman numerals) should be used and, conversely, if there are not at least two sub-topics, then no subheads should be introduced. Styles named ``Heading 1'', ``Heading 2'', ``Heading 3'', and ``Heading 4'' are prescribed.
+The 12 criterion questions, at a basic level, all measured password strength or at least habits related to password strength, but with different nuances. The questionnaire was designed with 2 groups of questions:
 
-\subsection{Figures and Tables}
+The first group consists of the questions that deal with password strength as it relates to trust. Trust was either implicitly or explicitly built as a consideration in the question. Questions 1 to 5 asked participants to rate their password strength in different types of websites, with the assumption that participants have different levels of trust in different types of websites. Question 6 was a more direct method of measuring the same thing, asking participants whether they have stronger passwords based on their perceived trust of a website. Since trust is directly influenced by the security level perceived by consumers, question 7, which asks participants whether they have strong passwords based on the perceived security level of a website, was designed as both a repeat of question 6 and also as a method of confirming that relationship \cite{Flavian2006}. The intent of these questions was to investigate the suggestion by Brown et al. \cite{Brown2004} discussed in the introduction, but the design of the questions in this group was poor and the implications of this will be elaborated on in the results and discussion section.
 
-Positioning Figures and Tables: Place figures and tables at the top and bottom of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be below the figures; table heads should appear above the tables. Insert figures and tables after they are cited in the text. Use the abbreviation ``Fig. 1'', even at the beginning of a sentence.
+The second group consists of the questions that measure password strength without regards to trust. Question 11 asked this directly, asking participants simply whether they used strong passwords. Questions 8, 9, 10, and 12 all asked participants about their behavior or habits that are closely linked to password strength. These behaviors being password strength, writing passwords down, forgetting passwords (leading to re-use or writing passwords down), and their usage of auto-generated passwords.
+
+\section{Results and Discussion}
+
+\subsection{Descriptive Statistics}
+
+\begin{table*}[h]
+\caption{Calculated descriptive statistics for all questions}
+\label{tab:desc}
+\begin{center}
+\begin{tabular}{rrrrrrrrrrrrrrrr}
+\hline
+      & Q1  & Q2 & Q3  & Q4 & Q5 & Q6  & Q7  & Q8  & Q9  & Q10 & Q11 & Q12 & Q13 & Q14 & Q15 \\ \hline
+Mode   & 3,4 & 4  & 3,4 & 3  & 3  & 4   & 4   & 5   & 4   & 1   & 4   & 5   & 2   & 2   & 2   \\ \hline
+Median & 4   & 3  & 3   & 3  & 3  & N/A & N/A & N/A & N/A & N/A & N/A & N/A & N/A & N/A & N/A \\ \hline
+Range  & 4   & 5  & 4   & 5  & 5  & N/A & N/A & N/A & N/A & N/A & N/A & N/A & N/A & N/A & N/A \\ \hline
+\end{tabular}
+\end{center}
+\end{table*}
+
+Since we are dealing with mostly nominal variables, we can only calculate the mode for the responses to questions 6 to 15. Measures of spread cannot not be performed on nominal data. 
+
+Table \ref{tab:desc} shows the calculated mode for every question. Two questions had two modes, which are shown separated with a comma. From the mode we can see that there is not much variation in the answers for password strength with regards to trust in different websites (Questions 1 to Question 5). And we can see that the mode for password strength in general is “agree”, indicating that most respondents generally consider themselves to have strong passwords. The mode for questions 8, 9, and 10 are “strongly agree” (“strongly disagree” for Q10, but it is an inversely related question), indicating that respondents tend to re-use, write-down, and forget their passwords; supporting the current literature \cite{Brown2004}. The mode for question 12 is “strongly agree”, indicating that respondents tend to prefer custom-creating passwords rather than auto-generating, which supports the previous findings by Alkadi et al. \cite{Alkadi2016}.
+
+The mode for both question 6 and question 7 is “agree”, indicating that respondents tend to agree that they have stronger password security when on websites that are more trustworthy or have better security. This trend is interesting because it indicates that respondents may be more concerned over potential loss in the event of a data breach rather than having strong passwords to compensate for a lack of security, thus preventing a possible data breach in the first place. One would expect that respondents would “agree” to this question if they are more concerned with the former, and to “disagree” if they are more concerned with the latter. The median and range for questions 1-5 are also shown.
+
+The mode for all three demographic questions (Questions 13-15) indicate that respondents tended to be younger, with bachelor’s level education, and some password security training.
+
+\subsection{Factor Analysis}
 
 \begin{table}[h]
-\caption{An Example of a Table}
-\label{table_example}
+\caption{Component Matrix for non-rotated PCA}
+\label{tab:compmatrix}
 \begin{center}
-\begin{tabular}{|c||c|}
+\begin{tabular}{lrrr}
 \hline
-One & Two\\
-\hline
-Three & Four\\
-\hline
+                & 1     & 2     & 3     \\ \hline
+Q1\_PStr\_Bank  & .759  & -.159 & -.236 \\ \hline
+Q2\_PStr\_Shop  & .662  & .095  & .235  \\ \hline
+Q3\_PStr\_Work  & .741  & .079  & -.063 \\ \hline
+Q4\_PStr\_SMed  & .652  & -.390 & .387  \\ \hline
+Q5\_PStr\_Forum & .608  & -.370 & -.019 \\ \hline
+Q6\_PStr\_Trust & .577  & .647  & .005  \\ \hline
+Q7\_PStr\_Sec   & .634  & .603  & .115  \\ \hline
+Q8\_PReuse      & -.560 & .244  & .301  \\ \hline
+Q9\_PForget     & .071  & .325  & .784  \\ \hline
+Q10\_PWrite     & .103  & .673  & -.269 \\ \hline
+Q11\_PStr       & .714  & -.248 & -.298 \\ \hline
+Q12\_PCustom    & -.173 & .329  & -.620 \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
 
+\begin{table}[h]
+\caption{Component Matrix for rotated PCA}
+\label{tab:compmatrixrot}
+\begin{center}
+\begin{tabular}{lrrr}
+\hline
+                & 1     & 2     & 3     \\ \hline
+Q1\_PStr\_Bank  & .759  & -.159 & -.236 \\ \hline
+Q2\_PStr\_Shop  & .662  & .095  & .235  \\ \hline
+Q3\_PStr\_Work  & .741  & .079  & -.063 \\ \hline
+Q4\_PStr\_SMed  & .652  & -.390 & .387  \\ \hline
+Q5\_PStr\_Forum & .608  & -.370 & -.019 \\ \hline
+Q6\_PStr\_Trust & .577  & .647  & .005  \\ \hline
+Q7\_PStr\_Sec   & .634  & .603  & .115  \\ \hline
+Q8\_PReuse      & -.560 & .244  & .301  \\ \hline
+Q9\_PForget     & .071  & .325  & .784  \\ \hline
+Q10\_PWrite     & .103  & .673  & -.269 \\ \hline
+Q11\_PStr       & .714  & -.248 & -.298 \\ \hline
+Q12\_PCustom    & -.173 & .329  & -.620 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
 
-   \begin{figure}[thpb]
-      \centering
-      \framebox{\parbox{3in}{We suggest that you use a text box to insert a graphic (which is ideally a 300 dpi TIFF or EPS file, with all fonts embedded) because, in an document, this method is somewhat more stable than directly inserting a picture.
-}}
-      \includegraphics[scale=1.0]{barsQ1Q5300w.PNG}
-      \caption{Inductance of oscillation winding on amorphous
-       magnetic core versus DC bias magnetic field}
-      \label{fig:barchartsmall}
-   \end{figure}
+\begin{figure}[thpb]
+  \centering
+%   \framebox{\parbox{3in}{
+    \includegraphics[scale=0.84]{compplot1.PNG}
+% }}
+  \caption{Non-rotated Component Plot from PCA}
+  \label{fig:compplot}
+\end{figure}
+  
+\begin{figure}[thpb]
+  \centering
+%   \framebox{\parbox{3in}{
+    \includegraphics[scale=0.84]{compplotrot.PNG}
+% }}
+  \caption{Rotated Component Plot from PCA}
+  \label{fig:compplotrot}
+\end{figure}
+
+Factor analysis was performed on the 12 criterion variables to determine which variables were highly correlated. Factor analysis allows us to reduce the number of dimensions on which the criterion variables can be compared with demographic variables. Factor analysis was performed via Principal Component Analysis (PCA), and was initially not rotated. The results of PCA showed that there were 3 components. The question of which variable belonged to which component was not initially clear from the 3-dimensional component plot (Fig. \ref{fig:compplot}), and so PCA was performed a second time using Varimax Rotation with Kaiser Normalization for robustness and to ease the identification of component variables. The resulting 3-dimensional component plot (Fig. \ref{fig:compplotrot}) in rotated space did not give substantially more readable components. In-fact, Question 12 appears to be more closely correlated to component 1 than component 2 in rotated space, but from the component matrices we can see that this is not the case. 
+
+\subsection{Component Composition and Representation}
+
+From the component matrices and the component plots, it can be determined that the components are as follows:
+
+\begin{enumerate}
+\item 	Component 1 consists of questions 1-5, and 11.
+\item 	Component 2 consists of questions 6, 7, 10, and 12.
+\item 	Component 3 consists of questions 8 and 9.
+\end{enumerate}
+
+These components were surprising, and the components here are reasonable in some cases, and a little perplexing in others. First, I will discuss the most reasonable representations of each component. 
+
+Component 1 represents password strength, and I surmise that it is password strength with no consideration for consumer trust. Question 11, which directly asked the participant to rate their password strength is most highly correlated with this component. Questions 1 to 5 are all also highly correlated, indicating questions 1 to questions 5 may be simply directly related to password strength and had no real effect on measuring password strength as it relates to trust. For the purposes of statistical analysis with the demographic variables, question 11 will be used since it is most highly correlated with the component.
+
+Component 2 likely represents password strength with a consideration for consumer trust. Question 6 and Question 7, which directly ask participants to rate their password strength with regards to consumer trust are the most highly correlated variables to the factor. Question 10, which asked whether participants write down their passwords, is also highly correlated. This, at least at an initial glance, is perplexing. One would think that writing down passwords would be inversely correlated to password strength. Upon further analysis however, this positive correlation with password strength may make sense since people are more likely to write down their passwords if their password is complex or long. From this point of view, the positive correlation is reasonable. Question 12 is also a perplexing relationship. Question 12 asked whether or not participants use their own passwords rather than auto-generated passwords. Using your own passwords, while not necessarily being stronger than auto-generated passwords, may give the illusion that the password is strong from a psychological perspective. It is surprising that questions 1 to 5 are not highly correlated with this factor, since they were designed to be more specific forms of question 6 and question 7. For the purposes of statistical analysis with the demographic variables, question 6 will be used since it is most highly correlated with the component.
+
+Component 3 represents variables that measure habits or practices that result in poor password security. Question 9, regarding password forgetfulness is most highly correlated with this factor and is likely to represent this factor, since there are only two members anyway. Furthermore, I am hesitant to include question 8 in this component, since on the component matrices it has a weak correlation to component 3, and is, in fact, mathematically more strongly correlated in an inverse relationship to component 1. From a logical standpoint, it could reasonably belong in either one. Question 8 essentially asks participants to rate their level of password re-use. Password re-use could be positively correlated with component 3, since high forgetfulness indicates high password re-use. On the other hand, low password re-use also indicates high password security. For the purposes of statistical analysis with the demographic variables, question 9 will be used since it is most highly correlated with the component.
+
+%   \begin{figure}[thpb]
+%       \centering
+%       \framebox{\parbox{3in}{We suggest that you use a text box to insert a graphic (which is ideally a 300 dpi TIFF or EPS file, with all fonts embedded) because, in an document, this method is somewhat more stable than directly inserting a picture.
+% }}
+%       \includegraphics[scale=1.0]{barsQ1Q5300w.PNG}
+%       \caption{Inductance of oscillation winding on amorphous
+%       magnetic core versus DC bias magnetic field}
+%       \label{fig:barchartsmall}
+%   \end{figure}
    
-   \begin{figure*}[thpb]
-   \includegraphics[width=1.0\textwidth]{barsQ1Q5.PNG}
-     \caption{Inductance of oscillation winding on amorphous
-       magnetic core versus DC bias magnetic field}
+% Figure Labels: Use 8 point Times New Roman for Figure labels. Use words rather than symbols or abbreviations when writing Figure axis labels to avoid confusing the reader. As an example, write the quantity ``Magnetization'', or ``Magnetization, M'', not just ``M''. If including units in the label, present them within parentheses. Do not label axes only with units. In the example, write ``Magnetization (A/m)'' or ``Magnetization {A[m(1)]}'', not just ``A/m''. Do not label axes with a ratio of quantities and units. For example, write ``Temperature (K)'', not ``Temperature/K.''
+
+\subsection{Hypotheses From Factor Analysis}
+
+Before performing any statistical analysis, the demographic results for each of questions 13 to 15 were grouped into 2 groups each. Question 13: password security training, was divided into “some or less” and “more than some”. Question 14: age, was divided into below 44 and above 44 years of age. Question 15: education level, was divided into those who have graduate degrees and those who do not. These groupings were created so that more powerful 2-sample statistical tests could be performed on the demographic variables. Phi correlation testing was also performed on the ungrouped demographic variables for investigative purposes.
+
+Using each representative of each component, we can test the statistical difference between the components and each grouped demographic variable, resulting in 9 pairs of null and alternate hypotheses seen in section 1.1.
+
+\subsection{Analysis Between Components and Demographic Variables}
+
+Since all 15 variables collected, as well as the 3 transformed (grouped) variables, are measured on a nominal scale, then all variable results must be nonparametric. The tests used were Fisher’s exact test to determine if there were nonrandom associations between the 2-sample grouped demographic variables and our criterion components. The Chi-Square test was not available in place of Fisher’s exact test because the sample size did not allow for the 5-minimum count in every cell. In every case at least one cell had less than 5 samples. Kruskal-Wallis tests could not be performed because the test requires the dependent variable to be at least measured on an ordinal scale. Measures of correlation were also performed using Cramer’s V. Since it is more important to investigate the entire breadth of the demographic variables, the ungrouped variables were used for correlational tests. The ungrouped variables are not dichotomous decisions, thus Cramer’s V, commonly called Cramer’s Phi was used in place of the Phi Coefficient. 
+
+For all statistical testing, a critical value of \textalpha{}=0.05 was used. The traditional alternative of \textalpha{}=0.01 was not chosen. This way, the possibility of type 2 errors aka “missed” errors was minimized because we don’t want to miss capturing any correlation or relationship between the variables. 
+
+Two-tailed tests were performed rather than one-tailed tests because our research problem makes no assumptions on the direction of any relationships. Only to investigate whether that relationship exists. For example we cannot suppose whether younger or older people have better password security.
+
+\begin{table}[h]
+\caption{Fisher's exact test p-values for grouped demographics vs component representatives}
+\label{tab:fisher}
+\begin{center}
+\begin{tabular}{lrrr}
+\hline
+                & Q13 GROUP & Q14 GROUP & Q15 GROUP \\ \hline
+Q11 Component 1 & 0.010       & 0.736       & 0.193       \\ \hline
+Q6 Component 2  & 0.526       & 0.732       & 0.305       \\ \hline
+Q9 Component 3  & 0.977       & 0.358       & 0.688       \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Table \ref{tab:fisher} shows the resulting p-values from Fisher’s exact test performed on all pairings of the 2-sample grouped demographic variables with the component representatives. In total all 9 possible pairings are shown. The only pairing where p < \textalpha{} is between Q11 vs Q13 marked in red. Recall that Q11 directly asked for password strength, while question 13 measured their level of password security training. We can reject H1o and accept H1a. Thus, there exists a statistically significant difference between those with “some or less” password security training and those with “more than some” password security training. This finding is reasonable, as you would expect those who have been trained in password security to have better knowledge and practice of password strength. All other null hypotheses are accepted.
+
+\begin{table}[h]
+\caption{Cramer’s V for correlational tests between ungrouped demographics and component representatives}
+\label{tab:cramer}
+\begin{center}
+\begin{tabular}{lrrr}
+\hline
+                & Q13   & Q14   & Q15   \\ \hline
+Q11 Component 1 & 0.395 & 0.336 & 0.307 \\ \hline
+Q6 Component 2  & 0.346 & 0.282 & 0.396 \\ \hline
+Q9 Component 3  & 0.220 & 0.344 & 0.326 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\caption{P-values for correlational tests between ungrouped demographics and component representatives.}
+\label{tab:cramerp}
+\begin{center}
+\begin{tabular}{lrrr}
+\hline
+                & Q13   & Q14   & Q15   \\ \hline
+Q11 Component 1 & 0.096 & 0.319 & 0.503 \\ \hline
+Q6 Component 2  & 0.277 & 0.691 & 0.093 \\ \hline
+Q9 Component 3  & 0.924 & 0.273 & 0.386 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Table \ref{tab:cramer} shows the resulting Cramer’s V values for correlation tests performed on all pairings of the ungrouped demographic variables with the component representatives. At a glance we can see all the pairings are positively correlated, but the correlations are relatively weak. Table \ref{tab:cramerp} shows the corresponding p-values for each pairing, and we can see p > \textalpha{} in all cases and thus none of the pairings reach significance threshold.
+
+\subsection{Trust, Password Security, and Issues Therein}
+
+  \begin{figure*}[thpb]
+  \includegraphics[width=1.0\textwidth]{barsQ1Q5.PNG}
+     \caption{Distribution of answers for trust-category questions}
          \label{fig:barchart}
-   \end{figure*}
+  \end{figure*}
 
-Figure Labels: Use 8 point Times New Roman for Figure labels. Use words rather than symbols or abbreviations when writing Figure axis labels to avoid confusing the reader. As an example, write the quantity ``Magnetization'', or ``Magnetization, M'', not just ``M''. If including units in the label, present them within parentheses. Do not label axes only with units. In the example, write ``Magnetization (A/m)'' or ``Magnetization {A[m(1)]}'', not just ``A/m''. Do not label axes with a ratio of quantities and units. For example, write ``Temperature (K)'', not ``Temperature/K.''
+Fig. \ref{fig:barchart} shows the actual number of responses for each of questions 1 to 5 versus the Likert scale used. Bars with 0 responses are not shown for conciseness. From an observational standpoint, we can see no immediate difference. Question 5 appears to have generally lower responses than the other 4 questions, but not by much. If we refer to Table \ref{tab:desc} and compare the modes, we can see that all the modes are either 3 or 4 with no discernable pattern. The medians are slightly more informative, but not by much. We can see that responses to all questions have a median of 3, except for banking passwords which have a median of 4. These observed trends are not trustworthy due to many threats to the internal validity of this study.
 
-\section{CONCLUSIONS}
+The goal of questions 1 to 5 was to investigate the relationship between various levels of trust in websites and the level of password strength used by participants. Admittedly, the instrumentation was poorly designed and could not effectively investigate this relationship in any meaningful fashion. The questions were designed in such a way that a scale of trust was inherently built into the questions from 1 to 5, with question 1, the question regarding banking passwords assumed to have the highest trust, and question 5, the question regarding internet communities assumed to have the lowest trust. The intent was to analyze differences between the answers to each question, but this design has several issues. Not only does this make an assumption that is not necessarily substantiated, but even between the questions the scale of trust is unclear. For example, it is unreasonable to say that one has more trust in social media websites vs e-commerce websites. 
 
-A conclusion section is not required. Although a conclusion may review the main points of the paper, do not replicate the abstract as the conclusion. A conclusion might elaborate on the importance of the work or suggest applications and extensions. Referring figure 2 = Fig. \ref{fig:barchart}. Let's cite c2 = \cite{c2}. 
+Furthermore, because these are dependent variables with non-binary decisions, only the correlation between the variables could be statistically tested. Cramer’s V values were generated between the 5 variables for these 5 questions, and all 5 questions had high positive correlation. The high correlation indicates that regardless of website, stronger passwords beget stronger passwords. I have not shown the table of values because the problem with testing correlation is that it is not, in fact, a question we are interested in. It is reasonable and possibly obvious that password strength in one category of websites would be highly and positively correlated with password strength in another category. After all, one who has strong passwords in general would have strong passwords across all websites. We are not interested in the correlation between password strengths on different websites, but rather a significant difference between the means (which can only be calculated for continuous data). If there was a difference, then we would have been able to see if respondents use different password strengths for different categories of websites.
+
+\subsection{Possible Changes for Further Research}
+
+The core issue underlying why questions 1 to 5 were ineffective is that we lack concrete data on trust. Preferably continuous data, but at the very least ordinal data. Not only is making the assumption on levels of trust in different categories unfounded, but it has no frame of reference to compare with. There are many ways that this relationship could have been investigated in a much more robust and meaningful fashion, and I offer two suggestions here for both future work and the possibility of re-doing this study. Both methods would first require participants to rate their trust in various websites on at least an ordinal scale; this way there would be data on trust rather than an assumption.
+
+\begin{enumerate}
+\item The first method would then ask participants to rate their password strength on a similar scale in the same website. Then this variable could be directly checked for correlation with the trust variable.
+\item The second method would instead ask participants to “check all websites” that they have strong password for. Each website would be treated during data coding as a binary choice and then these binary choices could be statistically compared to the trust rating. 
+\end{enumerate}
+
+\subsection{Threats to Internal Validity}
+
+There are many threats to internal validity of this study. Firstly, no reliability methods were used in questionnaire design. It is highly possible that there are respondents who could have answered inconsistently or even untruthfully. Usage of methods such as split-half reliability design would have minimized this threat. 
+
+Secondly, another instrumentation issue, the order of questions 1 to 5 may have indicated to the participants the answer that the survey “wanted”. It is reasonable to think that the order of the questions indicated a downwards hierarchy, and it is further reasonable to think that participants may have perceived this hierarchy. If the questionnaire was designed using method 1 from the previous section, and the question order was then randomized, then this threat could have been mitigated.
+
+Thirdly, there is still a distinct possibility that the language used was not “neutral enough” and were slightly leading. Asking participants whether they have a “strong password” or agree with having “strong passwords” may have yielded different results than if the questionnaire asked for “weak password”. This threat may have been mitigated by sticking to either perfectly-neutral scales such as “please rate from 1-5” or by asking both strong and weak on the same questionnaire.
+
+Lastly, the conditions under which the questionnaire were not standardized. In the case of the graduate students, the condition was a classroom scenario where all participants were motivated to answer truthfully and completely, since not doing so would have been a social faux-pas. In the case of the young professionals, the conditions were loud and distracting. In the case of the friends and family, as well as the employees of a small company, the conditions were calm but the participants did not particularly incentivized to complete the questionnaire. Standardization, or at least some control, over the conditions would have aided in combatting this threat. 
+
+\subsection{Threats to External Validity}
+
+There are many threats to internal validity of this study. Firstly, no reliability methods were used in questionnaire design. It is highly possible that there are respondents who could have answered inconsistently or even untruthfully. Usage of methods such as split-half reliability design would have minimized this threat. 
+
+Secondly, another instrumentation issue, the order of questions 1 to 5 may have indicated to the participants the answer that the survey “wanted”. It is reasonable to think that the order of the questions indicated a downwards hierarchy, and it is further reasonable to think that participants may have perceived this hierarchy. If the questionnaire was designed using method 1 from the previous section, and the question order was then randomized, then this threat could have been mitigated.
+
+Thirdly, there is still a distinct possibility that the language used was not “neutral enough” and were slightly leading. Asking participants whether they have a “strong password” or agree with having “strong passwords” may have yielded different results than if the questionnaire asked for “weak password”. This threat may have been mitigated by sticking to either perfectly-neutral scales such as “please rate from 1-5” or by asking both strong and weak on the same questionnaire.
+
+Lastly, the conditions under which the questionnaire were not standardized. In the case of the graduate students, the condition was a classroom scenario where all participants were motivated to answer truthfully and completely, since not doing so would have been a social faux-pas. In the case of the young professionals, the conditions were loud and distracting. In the case of the friends and family, as well as the employees of a small company, the conditions were calm but the participants did not particularly incentivized to complete the questionnaire. Standardization, or at least some control, over the conditions would have aided in combatting this threat. 
+
+\section{Conclusion}
+
+PLACEHOLDER Lorem ipsum diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus viverra vitae congue eu consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed
+
+% A conclusion section is not required. Although a conclusion may review the main points of the paper, do not replicate the abstract as the conclusion. A conclusion might elaborate on the importance of the work or suggest applications and extensions. Referring figure 2 = Fig. \ref{fig:barchart}. Let's cite c2 = \cite{c2}. 
 
 \addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
                                   % on the last page of the document manually. It shortens
@@ -204,48 +392,32 @@ A conclusion section is not required. Although a conclusion may review the main 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{APPENDIX}
+\section*{Appendix 1: Questionnaire}
+% Appendixes should appear before the acknowledgment.
 
-Appendixes should appear before the acknowledgment.
+TODO
 
-\section*{ACKNOWLEDGMENT}
+% \section*{ACKNOWLEDGMENT}
 
-The preferred spelling of the word ``acknowledgment'' in America is without an ``e'' after the ``g''. Avoid the stilted expression, ``One of us (R. B. G.) thanks . . .''  Instead, try ``R. B. G. thanks''. Put sponsor acknowledgments in the unnumbered footnote on the first page.
+% The preferred spelling of the word ``acknowledgment'' in America is without an ``e'' after the ``g''. Avoid the stilted expression, ``One of us (R. B. G.) thanks . . .''  Instead, try ``R. B. G. thanks''. Put sponsor acknowledgments in the unnumbered footnote on the first page.
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-References are important to the reader; therefore, each citation must be complete and correct. If at all possible, references should be commonly available publications.
-
-
 
 \begin{thebibliography}{99}
 
-\bibitem{c1} G. O. Young, ``Synthetic structure of industrial plastics (Book style with paper title and editor),'' 	in Plastics, 2nd ed. vol. 3, J. Peters, Ed.  New York: McGraw-Hill, 1964, pp. 15--64.
-\bibitem{c2} W.-K. Chen, Linear Networks and Systems (Book style).	Belmont, CA: Wadsworth, 1993, pp. 123--135.
-\bibitem{c3} H. Poor, An Introduction to Signal Detection and Estimation.   New York: Springer-Verlag, 1985, ch. 4.
-\bibitem{c4} B. Smith, ``An approach to graphs of linear forms (Unpublished work style),'' unpublished.
-\bibitem{c5} E. H. Miller, ``A note on reflector arrays (Periodical styleÑAccepted for publication),'' IEEE Trans. Antennas Propagat., to be publised.
-\bibitem{c6} J. Wang, ``Fundamentals of erbium-doped fiber amplifiers arrays (Periodical styleÑSubmitted for publication),'' IEEE J. Quantum Electron., submitted for publication.
-\bibitem{c7} C. J. Kaufman, Rocky Mountain Research Lab., Boulder, CO, private communication, May 1995.
-\bibitem{c8} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interfaces(Translation Journals style),'' IEEE Transl. J. Magn.Jpn., vol. 2, Aug. 1987, pp. 740--741 [Dig. 9th Annu. Conf. Magnetics Japan, 1982, p. 301].
-\bibitem{c9} M. Young, The Techincal Writers Handbook.  Mill Valley, CA: University Science, 1989.
-\bibitem{c10} J. U. Duncombe, ``Infrared navigationÑPart I: An assessment of feasibility (Periodical style),'' IEEE Trans. Electron Devices, vol. ED-11, pp. 34--39, Jan. 1959.
-\bibitem{c11} S. Chen, B. Mulgrew, and P. M. Grant, ``A clustering technique for digital communications channel equalization using radial basis function networks,'' IEEE Trans. Neural Networks, vol. 4, pp. 570--578, July 1993.
-\bibitem{c12} R. W. Lucky, ``Automatic equalization for digital communication,'' Bell Syst. Tech. J., vol. 44, no. 4, pp. 547--588, Apr. 1965.
-\bibitem{c13} S. P. Bingulac, ``On the compatibility of adaptive controllers (Published Conference Proceedings style),'' in Proc. 4th Annu. Allerton Conf. Circuits and Systems Theory, New York, 1994, pp. 8--16.
-\bibitem{c14} G. R. Faulhaber, ``Design of service systems with priority reservation,'' in Conf. Rec. 1995 IEEE Int. Conf. Communications, pp. 3--8.
-\bibitem{c15} W. D. Doyle, ``Magnetization reversal in films with biaxial anisotropy,'' in 1987 Proc. INTERMAG Conf., pp. 2.2-1--2.2-6.
-\bibitem{c16} G. W. Juette and L. E. Zeffanella, ``Radio noise currents n short sections on bundle conductors (Presented Conference Paper style),'' presented at the IEEE Summer power Meeting, Dallas, TX, June 22--27, 1990, Paper 90 SM 690-0 PWRS.
-\bibitem{c17} J. G. Kreifeldt, ``An analysis of surface-detected EMG as an amplitude-modulated noise,'' presented at the 1989 Int. Conf. Medicine and Biological Engineering, Chicago, IL.
-\bibitem{c18} J. Williams, ``Narrow-band analyzer (Thesis or Dissertation style),'' Ph.D. dissertation, Dept. Elect. Eng., Harvard Univ., Cambridge, MA, 1993. 
-\bibitem{c19} N. Kawasaki, ``Parametric study of thermal and chemical nonequilibrium nozzle flow,'' M.S. thesis, Dept. Electron. Eng., Osaka Univ., Osaka, Japan, 1993.
-\bibitem{c20} J. P. Wilkinson, ``Nonlinear resonant circuit devices (Patent style),'' U.S. Patent 3 624 12, July 16, 1990. 
-
-
-
-
+\bibitem{Dhamija2000} R. Dhamija, A. Perrig, ``Déjà vu: a user study. Using images for authentication,'' Proceedings of the 9th USENIX Security Symposium, Denver, Colorado, 2000.
+\bibitem{Morris1979} R. Morris and K. Thompson, ``Password security: a case history,'' Communications of the ACM, vol. 22, no. 11, pp. 594–597, Jan. 1979.
+\bibitem{DellAmico2010} M. D. Amico, P. Michiardi, and Y. Roudier, ``Password Strength: An Empirical Analysis,'' 2010 Proceedings IEEE INFOCOM, 2010.
+\bibitem{DeCarnavalet2014} X. D. C. D. Carnavalet and M. Mannan, ``From Very Weak to Very Strong: Analyzing Password-Strength Meters,'' Proceedings 2014 Network and Distributed System Security Symposium, 2014.
+\bibitem{Brown2004} A. S. Brown, E. Bracken, S. Zoccoli, and K. Douglas, ``Generating and remembering passwords,'' Applied Cognitive Psychology, vol. 18, no. 6, pp. 641–651, 2004.
+\bibitem{Alkadi2016} N. Alkaldi and K. Renaud, ``Why Do People Adopt, or Reject, Smartphone Password Managers?,'' Proceedings 1st European Workshop on Usable Security, 2016.
+\bibitem{Thomas2017} K. Thomas, A. Moscicki, D. Margolis, V. Paxson, E. Bursztein, F. Li, A. Zand, J. Barrett, J. Ranieri, L. Invernizzi, Y. Markov, O. Comanescu, and V. Eranti, ``Data Breaches, Phishing, or Malware?,'' Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security - CCS 17, 2017.
+\bibitem{Curtis2018} S. R. Curtis, J. R. Carre, and D. N. Jones, ``Consumer security behaviors and trust following a data breach,'' Managerial Auditing Journal, vol. 33, no. 4, pp. 425–435, 2018.
+\bibitem{Flavian2006} C. Flavián and M. Guinalíu, ``Consumer trust, perceived security and privacy policy,'' Industrial Management \& Data Systems, vol. 106, no. 5, pp. 601–620, 2006.
+\bibitem{Norman2010} G. Norman, ``Likert scales, levels of measurement and the “laws” of statistics,'' Advances in Health Science Education, vol. 15, no. 5, pp. 625–632, 2010.
 
 
 \end{thebibliography}
