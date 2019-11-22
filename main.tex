@@ -19,6 +19,9 @@
 \usepackage{graphicx}
 \usepackage{textgreek}
 \usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{makecell}
+
 
 % The following packages can be found on http:\\www.ctan.org
 %\usepackage{graphics} % for pdf, bitmapped graphics files
@@ -29,7 +32,7 @@
 %\usepackage{amssymb}  % assumes amsmath package installed
 
 \title{\LARGE \bf
-Placeholder Title
+An Investigate Survey Into the Intersection of Consumer Trust and Password Security
 }
 
 %\author{ \parbox{3 in}{\centering Huibert Kwakernaak*
@@ -64,7 +67,7 @@ Placeholder Title
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
 
-PLACEHOLDER Lorem ipsum diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus viverra vitae congue eu consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed
+In this paper, I present a study into the intersection of password security and trust. Through the use of a survey, I explore the association between password strength, password security habits, consumer trust in various websites, and the impact of password security training, age, and education. I find that there is an association between password strength and password security training. I observe a lack of association between age or education with security factors. Furthermore I discuss the notion of consumer trust as it relates to password security and explore trends and methods of measurement.
 
 \end{abstract}
 
@@ -78,7 +81,7 @@ We must first define what constitutes password security. Password security is no
 
 Password strength meters are present during account creation on many websites. These meters certainly guide users to choose stronger passwords, but are not necessarily always present \cite{DeCarnavalet2014}. In the absence of an enforced password strength policy, people tend to choose weaker passwords \cite{DellAmico2010}. 
 
-The habits that compromise our password security are re-use and writing-down \cite{Dhamija2000}. Our forgetfulness, or rather the memorability of our passwords, is a major factor that leads to both password re-use and writing them down. Brown et al. in their study on remembrance and memorability found that a majority of respondents re-use their passwords, and in fact, duplicate them identically \cite{Brown2004}. Password managers are software that auto-generate strong passwords and remember them for us. As long as the manager used is secure, then your passwords are fairly secure \cite{Alkadi2016}. Unfortunately they are not that widely used. It is still much more common to custom-create your own password \cite{Alkadi2016}.
+The habits that compromise our password security are re-use and writing-down \cite{Dhamija2000}. Our forgetfulness, or rather the memorability of our passwords, is a major factor that leads to both password re-use and writing them down. Brown et al. in their study on remembrance and memorability found that a majority of respondents re-use their passwords, and in fact, duplicate them identically \cite{Brown2004}. Password managers are software that auto-generate strong passwords and remember them for us. As long as the manager used is secure, then your passwords are fairly secure \cite{Alkaldi2016}. Unfortunately they are not that widely used. It is still much more common to custom-create your own password \cite{Alkaldi2016}.
 
 Data breaches have been occurring over the last decade with alarming frequency. Some famous ones include dating website Ashley Madison’s breach in 2015, question-and-answer site Quora in 2018, and cryptocurrency wallet Gatehub in 2019. Password re-use, regardless of the website, enables hackers to access accounts on any websites with that shared password. Thomas et al. in 2017 found that 25\% of the passwords from data breaches matched the same user’s google account \cite{Thomas2017}. 
 
@@ -162,7 +165,7 @@ Range  & 4   & 5  & 4   & 5  & 5  & N/A & N/A & N/A & N/A & N/A & N/A & N/A & N/
 \end{center}
 \end{table*}
 
-Table \ref{tab:desc} shows the calculated descriptive statistics for every question. Since we are dealing with mostly nominal variables, we can only calculate the mode for the responses to questions 6 to 15.  Two questions had two modes, which are shown separated with a comma. From the mode we can see that there is not much variation in the answers for password strength with regards to trust in different websites (question 1 to question 5). Further analysis of the descriptive measures on these questions will be discussed in section \ref{sec:trust}. We can see that the mode for question 11 is “agree”, indicating that most respondents generally consider themselves to have strong passwords. The mode for questions 8, 9, and 10 are “strongly agree” (“strongly disagree” for Q10, but it is an inversely related question), indicating that respondents tend to re-use, write-down, and forget their passwords; supporting the current literature \cite{Brown2004}. The mode for question 12 is “strongly agree”, indicating that respondents tend to prefer custom-creating passwords rather than auto-generated, which supports the previous findings by Alkadi et al. \cite{Alkadi2016}.
+Table \ref{tab:desc} shows the calculated descriptive statistics for every question. Since we are dealing with mostly nominal variables, we can only calculate the mode for the responses to questions 6 to 15.  Two questions had two modes, which are shown separated with a comma. From the mode we can see that there is not much variation in the answers for password strength with regards to trust in different websites (question 1 to question 5). Further analysis of the descriptive measures on these questions will be discussed in section \ref{sec:trust}. We can see that the mode for question 11 is “agree”, indicating that most respondents generally consider themselves to have strong passwords. The mode for questions 8, 9, and 10 are “strongly agree” (“strongly disagree” for Q10, but it is an inversely related question), indicating that respondents tend to re-use, write-down, and forget their passwords; supporting the current literature \cite{Brown2004}. The mode for question 12 is “strongly agree”, indicating that respondents tend to prefer custom-creating passwords rather than auto-generated, which supports the previous findings by Alkaldi et al. \cite{Alkaldi2016}.
 
 The mode for both question 6 and question 7 is “agree”, indicating that respondents tend to agree that they have stronger password security when on websites that are more trustworthy or have better security. This trend is interesting because it indicates that respondents may be more concerned over potential loss in the event of a data breach rather than having strong passwords to compensate for a lack of security, thus preventing a possible data breach in the first place. One would expect that respondents would “agree” to this question if they are more concerned with the former, and to “disagree” if they are more concerned with the latter.
 
@@ -368,16 +371,11 @@ Secondly, the survey questionnaire is entirely subjective to what the respondent
 
 \section{Conclusion}
 
-PLACEHOLDER Lorem ipsum diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus viverra vitae congue eu consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed
+In this work I presented an investigative survey into password strength and password habits as they intersect with consumer trust, as well as their relationships with training, age, and education. I identified that there indeed exists an association between password strength and password security training. My work corroborates previous findings by Brown et al. \cite{Brown2004} on the prevalence of poor password security habits, as well as work by Alkaldi \& Renaud \cite{Alkaldi2016} on the unpopularity of password managers and auto-generated passwords. My work also illustrates the need for future work in this domain to be mindful of instrumentation for the measurement of trust, and the importance of further investigation into the notion of trust and how it affects our security.
 
 % A conclusion section is not required. Although a conclusion may review the main points of the paper, do not replicate the abstract as the conclusion. A conclusion might elaborate on the importance of the work or suggest applications and extensions. Referring figure 2 = Fig. \ref{fig:barchart}. Let's cite c2 = \cite{c2}. 
 
-\addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
-                                  % on the last page of the document manually. It shortens
-                                  % the textheight of the last page by a suitable amount.
-                                  % This command does not take effect until the next page
-                                  % so it should come on the page before the last. Make
-                                  % sure that you do not shorten the textheight too much.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -388,10 +386,173 @@ PLACEHOLDER Lorem ipsum diam quis enim lobortis scelerisque fermentum dui faucib
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Appendix 1: Questionnaire}
+\section*{Appendix A: Questionnaire}
 % Appendixes should appear before the acknowledgment.
 
-TODO
+This is a research survey created for studies at York University. Your participation in this survey is voluntary. The purpose of the research survey is to evaluate your trust in websites and the companies running those websites as well as your password creation and security practices. This survey should take you about 3 minutes to complete.
+
+The survey will not ask you for your personal information or your passwords. The surveys will be kept \textbf{strictly confidential} and the questionnaires are \textbf{strictly anonymous}. All data will be aggregated prior to analysis and will only be used for the present study. The questionnaires will be destroyed after the publication of the results. If you have any questions, or would like a summary of the finds from this survey, please contact me at dkwan33@yorku.ca.
+
+\textbf{Please Circle One Answer:}
+
+\begin{enumerate}
+    \item How would you rate the strength of the password(s) you use for your personal banking? \textit{Answer if applicable (e.g. TD Bank, RBC, Scotiabank)}
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{ccccc}
+        1                 & 2        & 3       & 4     & 5              \\
+        Very Weak & Weak & Average & Strong & Very Strong
+        \end{tabular}
+        \end{center}
+        \end{table}
+    \item How would you rate the strength of the password(s) you use for online shopping? \textit{Answer if applicable (e.g. Amazon, BestBuy, Loblaws)}
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{ccccc}
+        1                 & 2        & 3       & 4     & 5              \\
+        Very Weak & Weak & Average & Strong & Very Strong
+        \end{tabular}
+        \end{center}
+        \end{table}
+    \item How would you rate the strength of the password(s) you use for your work or school? \textit{Answer if applicable}
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{ccccc}
+        1                 & 2        & 3       & 4     & 5              \\
+        Very Weak & Weak & Average & Strong & Very Strong
+        \end{tabular}
+        \end{center}
+        \end{table}
+    \item How would you rate the strength of the password(s) you use for social media? \textit{Answer if applicable (e.g. Twitter, Instagram, Facebook)}
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{ccccc}
+        1                 & 2        & 3       & 4     & 5              \\
+        Very Weak & Weak & Average & Strong & Very Strong
+        \end{tabular}
+        \end{center}
+        \end{table}
+        
+    \newpage{}
+    
+    \item How would you rate the strength of the password(s) you use for online forums or communities? \textit{Answer if applicable (e.g. Reddit, Yelp, bodybuildingforum.com)}
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{ccccc}
+        1                 & 2        & 3       & 4     & 5              \\
+        Very Weak & Weak & Average & Strong & Very Strong
+        \end{tabular}
+        \end{center}
+        \end{table}
+    \item I use stronger passwords on websites that are more trustworthy.
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{ccccc}
+        1                 & 2        & 3       & 4     & 5              \\
+        Strongly Disagree & Disagree & Neutral & Agree & Strongly Agree
+        \end{tabular}
+        \end{center}
+        \end{table}
+    \item I use stronger passwords on websites with better security.
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{ccccc}
+        1                 & 2        & 3       & 4     & 5              \\
+        Strongly Disagree & Disagree & Neutral & Agree & Strongly Agree
+        \end{tabular}
+        \end{center}
+        \end{table}
+    \item I tend to re-use my passwords.
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{ccccc}
+        1                 & 2        & 3       & 4     & 5              \\
+        Strongly Disagree & Disagree & Neutral & Agree & Strongly Agree
+        \end{tabular}
+        \end{center}
+        \end{table}
+    \item I often have trouble remembering my passwords.
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{ccccc}
+        1                 & 2        & 3       & 4     & 5              \\
+        Strongly Disagree & Disagree & Neutral & Agree & Strongly Agree
+        \end{tabular}
+        \end{center}
+        \end{table}
+    \item I tend to write down my passwords.
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{ccccc}
+        1                 & 2        & 3       & 4     & 5              \\
+        Strongly Disagree & Disagree & Neutral & Agree & Strongly Agree
+        \end{tabular}
+        \end{center}
+        \end{table}
+    \item I tend to use strong passwords.
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{ccccc}
+        1                 & 2        & 3       & 4     & 5              \\
+        Strongly Disagree & Disagree & Neutral & Agree & Strongly Agree
+        \end{tabular}
+        \end{center}
+        \end{table}
+    \item I tend to use my own passwords rather than using auto-generated passwords.
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{ccccc}
+        1                 & 2        & 3       & 4     & 5              \\
+        Strongly Disagree & Disagree & Neutral & Agree & Strongly Agree
+        \end{tabular}
+        \end{center}
+        \end{table}
+    \item What is your level of experience with password security training?
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{cccc}
+        1                 & 2        & 3       & 4   \\
+        None & \makecell{Some \\ \textit{(e.g. Workplace} \\\textit{Training)}} & \makecell{Substantial \\ \textit{(e.g. Classes,} \\ \textit{Formal Education)}} & \makecell{Professional \\ \textit{(e.g. Professional} \\ \textit{certification)}}
+        \end{tabular}
+        \end{center}
+        \end{table}
+        
+        \addtolength{\textheight}{-15.5cm}   % This command serves to balance the column lengths
+                          % on the last page of the document manually. It shortens
+                          % the textheight of the last page by a suitable amount.
+                          % This command does not take effect until the next page
+                          % so it should come on the page before the last. Make
+                          % sure that you do not shorten the textheight too much.
+        \newpage{}
+
+        
+        
+    \item What is your age?
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{|l|l|l|l|l|l}
+        \cline{1-1} \cline{3-3} \cline{5-5}
+         & under 25 &  & 25-34 &  & 35-44 \\ \cline{1-1} \cline{3-3} \cline{5-5}
+         & 45-54    &  & 55-64 &  & 65+   \\ \cline{1-1} \cline{3-3} \cline{5-5}
+        \end{tabular}
+        \end{center}
+        \end{table}
+    \item What is the highest degree or level of school you have completed? \textit{If currently enrolled, highest degree received}
+        \begin{table}[!htbp]
+        \begin{center}
+        \begin{tabular}{|l|l}
+        \cline{1-1}
+         & High school graduate, diploma, or the equivalent (e.g. GED) \\ \cline{1-1}
+         & Bachelor's degree                                                   \\ \cline{1-1}
+         & Master's degree                                                     \\ \cline{1-1}
+         & Doctorate degree                                                    \\ \cline{1-1}
+        \end{tabular}
+        \end{center}
+        \end{table}
+\end{enumerate}
+
+
+
 
 % \section*{ACKNOWLEDGMENT}
 
@@ -409,7 +570,7 @@ TODO
 \bibitem{DellAmico2010} M. D. Amico, P. Michiardi, and Y. Roudier, ``Password Strength: An Empirical Analysis,'' 2010 Proceedings IEEE INFOCOM, 2010.
 \bibitem{DeCarnavalet2014} X. D. C. D. Carnavalet and M. Mannan, ``From Very Weak to Very Strong: Analyzing Password-Strength Meters,'' Proceedings 2014 Network and Distributed System Security Symposium, 2014.
 \bibitem{Brown2004} A. S. Brown, E. Bracken, S. Zoccoli, and K. Douglas, ``Generating and remembering passwords,'' Applied Cognitive Psychology, vol. 18, no. 6, pp. 641–651, 2004.
-\bibitem{Alkadi2016} N. Alkaldi and K. Renaud, ``Why Do People Adopt, or Reject, Smartphone Password Managers?,'' Proceedings 1st European Workshop on Usable Security, 2016.
+\bibitem{Alkaldi2016} N. Alkaldi and K. Renaud, ``Why Do People Adopt, or Reject, Smartphone Password Managers?,'' Proceedings 1st European Workshop on Usable Security, 2016.
 \bibitem{Thomas2017} K. Thomas, A. Moscicki, D. Margolis, V. Paxson, E. Bursztein, F. Li, A. Zand, J. Barrett, J. Ranieri, L. Invernizzi, Y. Markov, O. Comanescu, and V. Eranti, ``Data Breaches, Phishing, or Malware?,'' Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security - CCS 17, 2017.
 \bibitem{Curtis2018} S. R. Curtis, J. R. Carre, and D. N. Jones, ``Consumer security behaviors and trust following a data breach,'' Managerial Auditing Journal, vol. 33, no. 4, pp. 425–435, 2018.
 \bibitem{Flavian2006} C. Flavián and M. Guinalíu, ``Consumer trust, perceived security and privacy policy,'' Industrial Management \& Data Systems, vol. 106, no. 5, pp. 601–620, 2006.
